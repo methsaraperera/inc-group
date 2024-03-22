@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<title>INC Resolver - Home</title>
+</head>
+<body>
+
+<section class="home-section">
+    <div class="home-main-section">
+        <div class="home-overlay"></div>
+        <div class="home-content">
+            <h1>Welcome to BMCC INC. Grade Portal</h1>
+            <p>At BMCC, we understand the demands of college life, and we're excited to introduce the Incomplete Grade Portal 
+                – your go-to platform to make up for extended classes and gain academic success.</p>
+            <br>
+            <h3>Student Demo:</h3>
+            <p class="text-box">Email: <span id="emailText">demo@student.com</span><button class="copy-button" onclick="copyText('emailText')"><i class="fa-solid fa-copy"></i></button></p>
+            <p class="text-box">Password: <span id="passwordText">demo@student.com</span><button class="copy-button" onclick="copyText('passwordText')"><i class="fa-solid fa-copy"></i></button></p>
+        </div>
+        
+
+        <div class="home-bottom-section-left">
+            <div>
+                <h2>Assignment Management</h2>
+                <p>View, Complete, and Submit your missed assignments and exams.</p>
+            </div>
+            <div>
+                <h2>Status Tracking</h2>
+                <p>Keep track of Improtant Dates, Progress, and Things to do </p>
+            </div>
+            <div>
+                <h2>Appointments</h2>
+                <p>Schedule Appointments with Instructors.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-side-section">
+        <div class="home-content">
+            <h3>Students,</h3>
+            <div class="home-buttons">
+                <a href="login.php?stu=true" class="home-button"><button class="home-button">Sign In</button></a>
+                <a href="signup.php" class="home-button"><button class="home-button">Sign Up</button></a>
+            </div>
+            <hr>
+            <h3>Instructors,</h3>
+            <div class="home-buttons">
+                <!--<a href="login.php?inc=true" class="home-button"><button class="home-button">Sign In</button></a>-->
+                <a href="login.php?inc=true" class="home-button"><button class="home-button">Sign In</button></a>
+            </div>
+            <hr>
+            
+            <h3>Reports,</h3>
+            <div class="home-buttons">
+                <a href="login.php?rep=true" class="home-button"><button class="home-button">Sign In</button></a>
+            </div>
+            
+        </div>
+        <div class="home-bottom-section-right">
+            <p class="home-footer-content">Copyright © 2024 <a href="https://github.com/methsaraperera"><u>Methsara Perera</u></a>
+                <br>Tech Innovation Hub Internship
+@ BMCC Tech Learning Community </p><br><br>
+        </div>
+        
+    </div>
+</section>
+
+<script src="js/watson.js"></script>
+<script src="js/copy.js"></script>
+<script src="https://kit.fontawesome.com/137463bc4f.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
