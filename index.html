@@ -3,40 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<title>INC Resolver - Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="styles-web.css">
+<title>INC Resolver Suite</title>
 </head>
+
+
 <body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <div class="navbar-title">
+                    <i class="fa-solid fa-user-graduate icon"></i>
+                    INC Resolve Suite
+                </div>
+            </div>
+            <!--
+
+            <ul class="navbar-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Demo</a></li>    
+            </ul>
+            -->  
+            
+            <div class="navbar-buttons">
+                <button class="signup-btn" onclick="window.location.href='#.html'">About</button>
+                <button class="signup-btn" onclick="window.location.href='#.html'">Contact</button>
+                <button class="signup-btn" onclick="window.location.href='#.html'">Demo</button>
+            </div>
+        
+        </div>
+    </header>
 
 <section class="home-section">
     <div class="home-main-section">
-        <div class="home-overlay"></div>
         <div class="home-content">
-            <h1>Welcome to BMCC INC. Grade Portal</h1>
+            <h1>Welcome to BMCC INC. Resolver Suite</h1>
             <p>At BMCC, we understand the demands of college life, and we're excited to introduce the Incomplete Grade Portal 
                 – your go-to platform to make up for extended classes and gain academic success.</p>
             <br>
             <h3>Student Demo:</h3>
             <p class="text-box">Email: <span id="emailText">demo@student.com</span><button class="copy-button" onclick="copyText('emailText')"><i class="fa-solid fa-copy"></i></button></p>
             <p class="text-box">Password: <span id="passwordText">demo@student.com</span><button class="copy-button" onclick="copyText('passwordText')"><i class="fa-solid fa-copy"></i></button></p>
-        </div>
-        
-
-        <div class="home-bottom-section-left">
-            <div>
-                <h2>Assignment Management</h2>
-                <p>View, Complete, and Submit your missed assignments and exams.</p>
-            </div>
-            <div>
-                <h2>Status Tracking</h2>
-                <p>Keep track of Improtant Dates, Progress, and Things to do </p>
-            </div>
-            <div>
-                <h2>Appointments</h2>
-                <p>Schedule Appointments with Instructors.</p>
-            </div>
         </div>
     </div>
 
@@ -50,7 +65,6 @@
             <hr>
             <h3>Instructors,</h3>
             <div class="home-buttons">
-                <!--<a href="login.php?inc=true" class="home-button"><button class="home-button">Sign In</button></a>-->
                 <a href="login.php?inc=true" class="home-button"><button class="home-button">Sign In</button></a>
             </div>
             <hr>
@@ -59,20 +73,27 @@
             <div class="home-buttons">
                 <a href="login.php?rep=true" class="home-button"><button class="home-button">Sign In</button></a>
             </div>
+            <br>
+
+            <hr>
             
-        </div>
-        <div class="home-bottom-section-right">
-            <p class="home-footer-content">Copyright © 2024 <a href="https://github.com/methsaraperera"><u>Methsara Perera</u></a>
-                <br>Tech Innovation Hub Internship
-@ BMCC Tech Learning Community </p><br><br>
+
+            <p style="font-size: 0.8em; color: var(--white-color);">Copyrights &copy 2024 Methsara Perera & Yeasin Arafat.<br>Tech Innovation Hub Internship at BMCC Tech Learning Community</p> 
         </div>
         
+        
     </div>
+
 </section>
 
-<script src="js/watson.js"></script>
-<script src="js/copy.js"></script>
-<script src="https://kit.fontawesome.com/137463bc4f.js" crossorigin="anonymous"></script>
+
+
+
+
+      
+
+
+    <script src="https://kit.fontawesome.com/137463bc4f.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
