@@ -1,4 +1,5 @@
-[[https://tree.nathanfriend.io/?s=(%27options!(%27fancyE~fullPath!false~trailKgSlashE~rootDotE)~J(%27J%27INC%20Resolver%20Suite2Kdex0abTcontact0demo0config0logK0sBup0src8favicon2js8copy.js8watson.js2F8logKMsBupMheaderMlogTportal8LAdashboard5view3Uturn-KM9A954add-4Qs563OVHes5Usearch-4*63*O*V*7B-H-4*8chair8report8bursar8%27)~version!%271%27)*%20%200.F22%5Cn*3-Q54L55M*6create7ass82*9KstructorA8*profile5BignE!trueFphpGentHcl7Jsource!KinLstudGM0*Oedit3Q7BmGTout0UF8**V6-H5%01VUTQOMLKJHGFEBA987654320*](https://tree.nathanfriend.io/?s=('options!('fancyZ~fullPath!false~trailingSlashZ~rootDotZ)~z('z'INC Resolver Suite8indexH8aboutH8YtactH8demoH8YfigH8loginH8VupH8kk-8src0pattern-1W0faviYQ192x192WQ512x512WUapple-touch-iYK-16x16K-32x32K.icoUsite.webmanifest** 8js0copy.js0watson.js8q0loginH0VupH0headerH0logoutH0k4MM8portal0J_dashboard7view-B7qU*turn-in7*k40X_X7J7add-J7Bs7OB7edit-B7OT7Tes7qU*search-J7*OB7*edit-B7*OT7*asV-T-J7*k4U*0chairFkM0reportFkM0bursarFkM0')~version!'1')*%20 08*4MM---7HU8\n*BasVmentFUNEEDS PLANNINGU4H.qJstudentKWUfaviYM----Ocreate-QUandroid-chrome-TclassU0*VsignW.pngXinstructorYconZ!true_Uprofile7k44qphpzsource!%01zqk_ZYXWVUTQOMKJHFB8740*)](https://tree.nathanfriend.io/?s=(%27options!(%27fancyZ~fullPath!false~trailingSlashZ~rootDotZ)~source!(%27source!%27INC%20Resolver%20Suite8indexH8aboutH8YtactH8demoH8YfigH8loginH8WupH8qq-8src0pattern-1X0faviYT192x192XT512x512XVapple-touch-iYK-16x16K-32x32K.icoVsite.webmanifest**%208js0copy.js0watson.js8php0loginH0WupH0headerH0logoutH0q4MM-8portal0J_dashboard7view-B7phpV*turn-inzcheck-statuszq4-0Q_Q7J7add-J7Bs7OB7edit-B7OU7Ues7phpV*search-JzOBzedit-BzOUzasW-U-Jzget-Q-namezq4V*0chairFqM0reportFqM0bursarFqM0%27)~version!%271%27)*%20%2008*4MM---7HV8%5Cn*BasWmentFVNEEDS%20PLANNINGV4H.phpJstudentKXVfaviYM----Ocreate-QinstructorTVandroid-chrome-UclassV0*WsignX.pngYconZ!true_Vprofile7q44z7*%01zq_ZYXWVUTQOMKJHFB8740*)
+https://tree.nathanfriend.io/?s=(%27options!(%27fancyZ~fullPath!false~trailingSlashZ~rootDotZ)~source!(%27source!%27INC%20Resolver%20Suite8indexH8aboutH8YtactH8demoH8YfigH8loginH8WupH8qq-8src0pattern-1X0faviYT192x192XT512x512XVapple-touch-iYK-16x16K-32x32K.icoVsite.webmanifest**%208js0copy.js0watson.js8php0loginH0WupH0headerH0logoutH0q4MM-8portal0J_dashboard7view-B7phpV*turn-inzcheck-statuszq4-0Q_Q7J7add-J7Bs7OB7edit-B7OU7Ues7phpV*search-JzOBzedit-BzOUzasW-U-Jzget-Q-namezq4V*0chairFqM0reportFqM0bursarFqM0%27)~version!%271%27)*%20%2008*4MM---7HV8%5Cn*BasWmentFVNEEDS%20PLANNINGV4H.phpJstudentKXVfaviYM----Ocreate-QinstructorTVandroid-chrome-UclassV0*WsignX.pngYconZ!true_Vprofile7q44z7*%01zq_ZYXWVUTQOMKJHFB8740*
+
 
 .
 └── INC Resolver Suite/
@@ -9,8 +10,17 @@
     ├── config.php
     ├── login.php
     ├── signup.php
+    ├── ---------------------------------------------
     ├── src/
-    │   └── favicon
+    │   ├── pattern-1.png
+    │   └── favicon/
+    │       ├── android-chrome-192x192.png
+    │       ├── android-chrome-512x512.png
+    │       ├── apple-touch-icon.png
+    │       ├── favicon-16x16.png
+    │       ├── favicon-32x32.png
+    │       ├── favicon.ico
+    │       └── site.webmanifest     
     ├── js/
     │   ├── copy.js
     │   └── watson.js
@@ -18,14 +28,17 @@
     │   ├── login.php
     │   ├── signup.php
     │   ├── header.php
-    │   └── logout.php
+    │   ├── logout.php
+    │   └── ------------------------------------------
     └── portal/
         ├── student/
         │   ├── profile.php
         │   ├── dashboard.php
         │   ├── view-assignment.php
         │   └── php/
-        │       └── turn-in.php
+        │       ├── turn-in.php
+        │       ├── check-status.php
+        │       └── ----------------------------------
         ├── instructor/
         │   ├── profile.php
         │   ├── instructor.php
@@ -41,7 +54,15 @@
         │       ├── create-assignment.php
         │       ├── edit-assignment.php
         │       ├── create-class.php
-        │       └── assign-class-student.php
-        ├── chair
-        ├── report
-        └── bursar
+        │       ├── assign-class-student.php
+        │       ├── get-instructor-name.php
+        │       └── ---------------------------------
+        ├── chair/
+        │   ├── NEEDS PLANNING
+        │   └── -------------------------------------
+        ├── report/
+        │   ├── NEEDS PLANNING
+        │   └── -------------------------------------
+        └── bursar/
+            ├── NEEDS PLANNING
+            └── -------------------------------------
