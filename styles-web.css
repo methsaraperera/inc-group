@@ -176,15 +176,15 @@ header{
     position: relative;
     width: 70%;
     overflow: hidden;
-    
 }
+
 
 .home-content {
     position: absolute;
     top: 10px;
     left: 10px;
     text-align: left;
-    color: #fff;
+    color: var(--white-color);
     width: 80%;
     padding-left: 5%;
 }
@@ -194,7 +194,27 @@ header{
     width: 30%;
     position: relative;
     overflow: hidden;
-    background-color: #1A4BAD;
+    background-color: var(--blue-color);
+}
+
+.home-section-full {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.home-main-section-full {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.home-content-full {
+    flex: 1; /* Let the content section grow to fill available space */
+    padding: 20px; /* Add padding for better readability */
+    overflow-y: auto; /* Add vertical scroll if content overflows */
 }
 
 .home-content h1 {
@@ -204,6 +224,7 @@ header{
     margin-bottom: 10px;   
     font-weight: 600;   
 }
+
 .home-content h3 {
     font-size: 1.8em;
     color: var(--green-color); 
@@ -211,7 +232,7 @@ header{
     margin-bottom: 10px;
 }
 
-.home-content p {
+.home-content p, .home-content-full p {
     font-size: 1.2em;
     color: var(--grey-color);
     margin-bottom: 10px; 
@@ -260,7 +281,7 @@ hr{
 }
 
 .copy-button:hover i{
-    color: var(--yellow-color);
+    color: var(--black-color);
 }
 
 .copy-button:active { 
@@ -286,4 +307,107 @@ hr{
     background-position: center;
     background-repeat: no-repeat;
     z-index: 1;
+}
+
+.home-content-full h2{
+    font-size: 2em;
+    color: var(--dark-blue-color); 
+    font-family: "Varela Round", sans-serif;
+    margin-bottom: 10px;   
+    font-weight: 500;
+    padding-top: 20px;   
+}
+
+footer {
+    margin-top: 50px;
+    background-color: var(--blue-color);
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-content {
+    color: var(--white-color);
+    font-size: 0.8em;
+}
+
+
+/*Login / Register Pages*/
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--white-color);
+    border-radius: 16px;
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+}
+
+
+.flex-form {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: var(--dark-blue-color);
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--dashboard-border-color);
+    border-radius: 5px;
+}
+
+select {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--dashboard-border-color);
+    border-radius: 5px;
+}
+
+.form-side-section {
+    background-color: var(--green-color);
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-side-section h3 {
+    font-size: 1.8em;
+    color: var(--dark-blue-color); 
+    padding-top:20px;
+    margin-bottom: 10px;
+}
+
+.form-button {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: var(--dark-blue-color);
+    width: 100%;
+    font-size: 16px;
 }
