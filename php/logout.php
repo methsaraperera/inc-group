@@ -3,5 +3,5 @@
     unset($_SESSION['uid']);
     unset($_SESSION['insid']);
     unset($_SESSION['instructor']);
-    echo '<meta http-equiv="refresh" content="0; URL=../index.html"/>';
+    echo '<meta http-equiv="refresh" content="0; URL=../index.php"/>';
 ?>
