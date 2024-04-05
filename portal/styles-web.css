@@ -1,0 +1,634 @@
+:root {
+    --white-color: #fff;
+    --grey-color: #262A43;
+    --dark-blue-color: #050162;
+    --blue-color: #1A4BAD;
+    --green-color: #00DCAC;
+    --light-grey-color: #dbdbdb; 
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: var(--white-color); 
+    z-index: 1;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    background-color: var(--white-color);
+    color: var(--grey-color);
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box; 
+    overflow-x: auto;
+    height: 80px;
+    border-bottom: 1px solid var(--light-grey-color);
+}
+
+  /* Logo styles */
+.navbar-logo img {
+    width: 50px; 
+    height: auto; 
+}
+
+.navbar-title {
+    margin: 0;
+    font-size: 26px;
+    font-family: "Varela Round", sans-serif;
+    color: var(--dark-blue-color);
+}
+.navbar-title .icon{
+    padding-right: 10px;
+}
+
+/* Navigation links styles */
+.navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+.navbar-links li {
+    background-color: var(--white-color);
+    color: var(--dark-blue-color);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 700;
+}
+
+.navbar-links li:last-child {
+    background-color: var(--white-color);
+    color: var(--dark-blue-color);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 700;
+    margin-right: 0;
+}
+/*
+.navbar-links li:hover {
+    background-color: var(--dark-blue-color);
+    color: var(--white-color);
+    border-radius: 25px;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 700;
+}
+*/
+
+.navbar-links a {
+    color: var(--dark-blue-color);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-links a:hover {
+    color: var(--blue-color);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Sign-in and Sign-up button styles */
+.navbar-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.signin-btn,
+.signup-btn {
+    background-color: var(--white-color);
+    color: var(--dark-blue-color);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 700;
+}
+
+.signin-btn:hover,
+.signup-btn:hover {
+    background-color: var(--dark-blue-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 700;
+}
+
+.navbar-text{
+    color: var(--blue-color);
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+}
+
+.home-section {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 80px);
+}
+
+.home-main-section {
+    position: relative;
+    width: 70%;
+    overflow: hidden;
+}
+
+.home-content {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-align: left;
+    color: var(--white-color);
+    width: 80%;
+    padding-left: 5%;
+}
+
+.home-side-section {
+    background-color: var(--blue);
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--blue-color);
+}
+
+.home-section-full {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.home-main-section-full {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.home-content-full {
+    flex: 1; /* Let the content section grow to fill available space */
+    padding: 20px; /* Add padding for better readability */
+    overflow-y: auto; /* Add vertical scroll if content overflows */
+}
+
+.home-content h1 {
+    font-size: 4em;
+    color: var(--dark-blue-color); 
+    font-family: "Varela Round", sans-serif;
+    margin-bottom: 10px;   
+    font-weight: 600;   
+}
+
+.home-content h3 {
+    font-size: 1.8em;
+    color: var(--green-color); 
+    padding-top:20px;
+    margin-bottom: 10px;
+}
+
+.home-content p, .home-content-full p {
+    font-size: 1.2em;
+    color: var(--grey-color);
+    margin-bottom: 10px; 
+}
+
+.home-content-full h2{
+    font-size: 2em;
+    color: var(--dark-blue-color); 
+    font-family: "Varela Round", sans-serif;
+    margin-bottom: 10px;   
+    font-weight: 500;
+    padding-top: 20px;   
+}
+
+
+.home-buttons {
+    display: flex;
+    gap: 10px;
+    max-width: 100%;
+    flex: 1;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.home-button {
+    flex: 1; 
+    padding: 8px 10px;
+    background-color: var(--white-color);
+    border: none;
+    color: var(--dark-blue-color);
+    border-radius: 5px;
+    cursor: pointer;
+    height: 30px;
+}
+
+hr{
+    border-color: rgba(255, 255, 255, 0.271);
+    background-color: rgba(255, 255, 255, 0.271);
+    margin-top: 12%;
+}
+
+.text-box{
+    margin-bottom: 0rem; 
+    line-height: 0.5; 
+}
+
+.copy-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.copy-button i {
+    color: var(--grey-color);
+}
+
+.copy-button:hover i{
+    color: var(--black-color);
+}
+
+.copy-button:active { 
+    transform: scale(0.95); 
+} 
+
+.home-footer-content{   
+    width: 100%;
+    color: var(--black-color);   
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.home-main-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 280px; 
+    height: 280px; 
+    background-image: url('src/pattern-1.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+
+footer {
+    margin-top: 50px;
+    background-color: var(--blue-color);
+    padding: 25px;
+    text-align: center;
+}
+
+.footer-content {
+    color: var(--white-color);
+    font-size: 0.8em;
+}
+
+
+/*Login / Register Pages*/
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--white-color);
+    border-radius: 16px;
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+}
+
+
+.flex-form {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: var(--dark-blue-color);
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--dashboard-border-color);
+    border-radius: 5px;
+}
+
+select {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--dashboard-border-color);
+    border-radius: 5px;
+}
+
+.form-side-section {
+    background-color: var(--green-color);
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-side-section h3 {
+    font-size: 1.8em;
+    color: var(--dark-blue-color); 
+    padding-top:20px;
+    margin-bottom: 10px;
+}
+
+.form-button {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: var(--dark-blue-color);
+    width: 100%;
+    font-size: 16px;
+}
+
+
+/*--------------------------------*/
+/*---------Dashboard-------------*/
+/*------------------------------*/
+
+.container {
+    display: flex;
+    height: auto;
+}
+
+.left-panel {
+    width: 80%;
+    background-color: var(--white-color);
+    padding: 30px;
+}
+
+.right-panel {
+    width: 20%;
+    background-color: var(--white-color);
+    padding-left: 0px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow-x: auto;
+}
+
+.full-panel {
+    width: 100%;
+    background-color: var(--white-color);
+    padding: 30px;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc(33.33% - 10px);
+    background-color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 200px; 
+}
+
+.card h3 {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 300;
+    color: var(--white-color)
+}
+
+.card p {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 50;
+    color: var(--white-color)
+}
+
+.card-divider {
+    border-top: 1px solid var(--white-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.task-container {
+    margin-top: 20px;
+    background-color: var(--white-color);
+    border: 1px solid var(--blue-color);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.task-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.task-divider {
+    border-top: 1px solid var(--blue-color);
+    margin-bottom: 10px;
+}
+
+.task-subheading {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: var(--dark-blue-color);
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.task-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    /*border-bottom: 1px solid var(--blue-color);*/
+}
+
+.task-line:hover {
+    background-color: var(--green-color);
+    border-radius: 10px;
+}
+
+.task-line div {
+    text-align: left;
+    top: auto;
+    bottom: auto;
+}
+
+.task-line .div1 {
+    width: 35%;
+    padding-left: 2%;
+  }
+
+.task-line .div2 {
+    width: 15%;
+    padding-left: 2%;
+}
+.task-line .div3 {
+    width: 10%;
+    padding-left: 2%;
+}
+.task-line .div4 {
+    width: 10%;
+    padding-left: 2%;
+    text-align:center;
+
+}
+.task-btn{
+    flex: 1; 
+    padding: 0;
+    border: none;
+    color: var(--dark-blue-color);
+    background-color:transparent;
+    cursor: pointer; 
+}
+
+.status {
+    width: 20%;
+    text-align: center;
+}
+
+.Completed {
+    width: 100%;
+    text-align: center;
+	color: 	#1c7232;
+}
+
+.Incomplete {
+    width: 100%;
+    text-align: center;
+	color: #721C24;
+	background-color: #f8d7da;
+	height: max-content;
+    border-radius: 25px;
+    border: 1px solid var(--dashboard-border-color);
+}
+
+
+.progress-container {
+    width: max-content;
+    height: min-content;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    text-align: center;
+    color: white; /* Text color inside the progress bar */
+}
+
+.progress-bar {
+    height: auto;
+    background-color: #76b852; /* Green background */
+    border-radius: 5px;
+    display: flex;
+    align-items: center; /* Align text vertically */
+    justify-content: center; /* Align text horizontally */
+}
+
+.menu{
+    margin-top: 0;
+    background-color: var(--white-color);
+    border: 1px solid var(--blue-color);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.rightbar-divider {
+    border-top: 1px solid var(--blue-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rightbar-buttons {
+    width: 100%;
+}
+
+.rightbar-button {
+    flex: 1; 
+    padding: 8px 15px;
+    background-color: var(--green-color);
+    border: none;
+    color: var(--grey-color);
+    border-radius: 10px;
+    cursor: pointer;
+    width:100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    min-height: 45px;  
+}
