@@ -18,7 +18,7 @@ $assignment_id = $_POST['assignment_id'];
 echo $assignment_id;
 echo $uid;
 
-$updateQuery = $conn->prepare("UPDATE `student_assignment` SET `status`='In' WHERE `student_id`=? AND `assignment_id`=?"); // Updated SQL query to use placeholders
+$updateQuery = $conn->prepare("UPDATE `student_assignment` SET `status`='In Review' WHERE `student_id`=? AND `assignment_id`=?"); // Updated SQL query to use placeholders
 $updateQuery->bind_param("ii", $uid, $assignment_id); // Binding parameters to placeholders
 if ($updateQuery->execute()) {
     header("Location: ../dashboard.php");
