@@ -5,6 +5,7 @@ echo
 <div class="navbar">
     <div class="navbar-logo">
         <div class="navbar-title">
+        
             <i class="fa-solid fa-user-graduate icon"></i>
             INC Resolve Suite
         </div>
