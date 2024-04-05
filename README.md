@@ -9,7 +9,7 @@ https://inc.methsara.tech/
 ## Current Progress
 _Dictonary:_
 > **✓** : Completed | **✕** : Not Started | **UD** : Under Development | **-** : Not Applicable
-> UI : User Interface | DB : Data Base / Backend | Integration: Integration of user interface with data base and other backend components
+> Prot: Prototype | UI : User Interface | DB : Data Base / Backend | Integration: Integration of user interface with data base and other backend components
 
 | Feature | Prot. | UI | DB | Integration |
 |----------------------------|-------|----|----|-------------|
