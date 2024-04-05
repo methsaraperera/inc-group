@@ -1,18 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles-web.css">
-<link rel="apple-touch-icon" sizes="180x180" href="src/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="src/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png">
-<title>INC Resolver Suite</title>
+    <?php include 'php/head.php'; ?>
+    <title>INC Resolver Suite</title>
 </head>
 <body>
     <header>
@@ -49,7 +39,7 @@
                     <a href="login.php?rep=true" class="home-button"><button class="home-button">Sign In</button></a>
                 </div>
                 <hr>
-                <p style="font-size: 0.8em; color: var(--white-color); padding-top: 20px;">Copyrights &copy 2024 Methsara Perera & Yeasin Arafat.<br>Tech Innovation Hub Internship at BMCC Tech Learning Community</p> 
+                <p style="font-size: 0.8em; color: var(--white-color); padding-top: 20px;"><?php include 'php/copyright.php'; ?></p> 
             </div>
         </div>
     </section>

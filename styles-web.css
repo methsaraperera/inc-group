@@ -225,9 +225,26 @@ header{
     font-weight: 600;   
 }
 
+.home-content-full h2 {
+    font-size: 2em;
+    color: var(--dark-blue-color); 
+    font-family: "Varela Round", sans-serif;
+    margin-bottom: 10px;   
+    font-weight: 500;
+    padding-top: 20px;   
+}
+
 .home-content h3 {
     font-size: 1.8em;
     color: var(--green-color); 
+    padding-top:20px;
+    margin-bottom: 10px;
+}
+
+.home-content-full h3 {
+    font-size: 1.5em;
+    color: var(--blue-color); 
+    font-family: "Varela Round", sans-serif;
     padding-top:20px;
     margin-bottom: 10px;
 }
@@ -237,6 +254,7 @@ header{
     color: var(--grey-color);
     margin-bottom: 10px; 
 }
+
 
 .home-buttons {
     display: flex;
@@ -309,14 +327,9 @@ hr{
     z-index: 1;
 }
 
-.home-content-full h2{
-    font-size: 2em;
-    color: var(--dark-blue-color); 
-    font-family: "Varela Round", sans-serif;
-    margin-bottom: 10px;   
-    font-weight: 500;
-    padding-top: 20px;   
-}
+
+
+
 
 footer {
     margin-top: 50px;
