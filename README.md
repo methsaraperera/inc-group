@@ -9,7 +9,7 @@ The purpose of this project is to create a centralized solution for managing, re
 ## What is INC Grade? ❓
 INC, or Incomplete grade, is issued to students when their coursework is incomplete, but there is a reasonable expectation that they can achieve a passing grade by completing the missing assignments. Students must agree with the instructor to complete the missing work before the INC deadline, which is published on the BMCC Academic Calendar. If the missing work is completed successfully, the "INC" grade is reverted to a passing grade. However, if no change is made by the deadline, the "INC" grade reverts to an "FIN" (Fail Incomplete).
 
-## Roles in the Application 🎭
+## Roles in the Application 👥
 
 ### Student 🎓
 - Has agreed with the instructor to proceed with completing the coursework.
@@ -26,13 +26,13 @@ INC, or Incomplete grade, is issued to students when their coursework is incompl
 - Can view student completion progress.
 - Can request to assign final grades.
 
-### Department Chairperson 🏢
+### Department Chairperson 🤵‍♂️
 - Can approve or decline student INC grade requests.
 - Can comment on decisions regarding declining INC grade requests.
 - Can approve or decline final grades assigned by instructors.
 - Can comment on decisions regarding declining final grades.
 
-### INC Administrative Officer 👩‍💼
+### INC Administrative Officer 📊
 - Can monitor the performance of the program.
 
 ### Registrar 📊
