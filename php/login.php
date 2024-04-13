@@ -71,8 +71,53 @@ if (isset($_POST['Login'])) {
         }
     }
 
+    elseif($role == 0){ // login for role 0 (administrative)
+        $staff_type =  ($_POST['staff_type']);
+        if (!empty($email) && !empty($pw)) {
+            $sql = mysqli_query($conn, "SELECT * FROM admin WHERE admin_email = '{$email}'");
+            if (!mysqli_num_rows($sql) > 0) {
+                header("Location: ../login.php?rep=true&error-non=true"); // user non exist
+                exit();
+            } 
+            else {
+                $search_password = mysqli_query($conn, "SELECT admin_id, password FROM admin WHERE admin_email = '{$email}'");
+                if (mysqli_num_rows($search_password) > 0) {
+                    $row = mysqli_fetch_assoc($search_password);
+                    $db_pw = $row['password'];
+                    $uid = $row['admin_id']; // will be used in future developments as the session key for login
+                    if ($pw == $db_pw) {
+                        if ($staff_type == 'chair'){
+                            $_SESSION['chair'] = $uid;
+                            header("Location: ../portal/chair/dashboard.php"); 
+                        }
+                        elseif ($staff_type == 'admin'){
+                            $_SESSION['admin'] = $uid;
+                            header("Location: ../portal/admin/dashboard.php"); 
+                        }
+                        elseif ($staff_type == 'reg'){
+                            $_SESSION['reg'] = $uid;
+                            header("Location: ../portal/registrar/dashboard.php"); 
+                        }
+                        else{
+                            header("Location: ../login.php?rep=true&error=true"); // unknown error
+                            exit();
+                        }
+                            
+                    } else {
+                        header("Location: ../login.php?inc=true&error-pw=true"); // invalid password
+                        exit();
+                    }
+                } else {
+                    header("Location: ../login.php?rep=true&error=true"); // unknown error
+                    exit();
+                }
+            }
+        } else {
+            header("Location: ../login.php?rep=true&error-inc=true"); // form invalid
+            exit();
+        }
+    }
 
-    // login for role 0 (bursar) goes here
     else{
         echo 'err role inc';
     }
