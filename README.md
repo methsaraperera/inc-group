@@ -1,7 +1,7 @@
 # INC Grade Management System
 
 ## Introduction 🚀
-This project is developed as part of the Tech Innovation Lab Internship at BMCC Tech Learning Community by [Developer 1] and [Developer 2]. The client for this project is CUNY Borough of Manhattan Community College, New York, NY.
+This project is developed as part of the Tech Innovation Lab Internship at BMCC Tech Learning Community by Methsara Perera and Yeasin Arafat. The client for this project is CUNY Borough of Manhattan Community College, New York, NY.
 
 ## Purpose 🎯
 The purpose of this project is to create a centralized solution for managing, resolving, and monitoring INC grades issued to BMCC students.
