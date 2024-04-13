@@ -56,14 +56,37 @@
                         echo '<div class="error">Form Invalid</div>';
                     }
                 ?>
-                <form method="POST" class="flex-form" action="php/login.php" enctype="multipart/form-data">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="test@test.net" required>
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Password" required>
-                    <input type='hidden' id='role' name='role' value= '<?php echo $role; ?>'>
-                    <input type="submit" class="form-button" name="Login" value="Login" required>
-                </form>
+                <?php
+                if($role!=0){
+                    echo '<form method="POST" class="flex-form" action="php/login.php" enctype="multipart/form-data">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="test@test.net" required>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <input type="hidden" id="role" name="role" value= "'.$role.'">
+                        <input type="submit" class="form-button" name="Login" value="Login" required>
+                    </form>';
+                }
+                else{
+                    echo '<form method="POST" class="flex-form" action="php/login.php" enctype="multipart/form-data">
+                        <label for="staff_type">Staff type</label>
+                        <select name="staff_type" id="type" required>
+                            <option></option>
+                            <option value="chair">Chairperson</option>
+                            <option value="admin">Admin</option>
+                            <option value="reg">Registrar</option>
+                        </select>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="test@test.net" required>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <input type="hidden" id="role" name="role" value= "'.$role.'">
+                        <input type="submit" class="form-button" name="Login" value="Login" required>
+                    </form>';
+                }
+
+                ?>
+                
             </div>
         </div>
     </section>
