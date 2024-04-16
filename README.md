@@ -3,10 +3,10 @@
 ## Introduction 🚀
 This project is developed as part of the Tech Innovation Lab Internship at BMCC Tech Learning Community by Methsara Perera and Yeasin Arafat. The client for this project is CUNY Borough of Manhattan Community College, New York, NY.
 
-## Purpose 🎯
+## Purpose
 The purpose of this project is to create a centralized solution for managing, resolving, and monitoring INC grades issued to BMCC students.
 
-## What is INC Grade? ❓
+## What is INC Grade?
 INC, or Incomplete grade, is issued to students when their coursework is incomplete, but there is a reasonable expectation that they can achieve a passing grade by completing the missing assignments. Students must agree with the instructor to complete the missing work before the INC deadline, which is published on the BMCC Academic Calendar. If the missing work is completed successfully, the "INC" grade is reverted to a passing grade. However, if no change is made by the deadline, the "INC" grade reverts to an "FIN" (Fail Incomplete).
 
 ## Roles in the Application 👥
