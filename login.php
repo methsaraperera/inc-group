@@ -92,9 +92,9 @@
     </section>
 
 
-    <footer>
+    <footer style="margin-top: 0";>
         <div class="footer-content">
-            Copyrights &copy 2024 Methsara Perera & Yeasin Arafat. Tech Innovation Hub Internship at BMCC Tech Learning Community
+            <?php include 'php/copyright.php'; ?>
         </div>
     </footer>
 
