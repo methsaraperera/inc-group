@@ -50,11 +50,6 @@ https://docs.google.com/presentation/d/1dzw-Ac4YdqpA1DPqyT51CJ1cJouLfDsJhO5-TkNj
 ## Project Live Preview
 https://inc.methsara.tech/
 
-## Current Progress
-_Dictonary:_
-> **✓** : Completed | **✕** : Not Started | **UD** : Under Development | **-** : Not Applicable\
-> Prot: Prototype | UI : User Interface | DB : Data Base / Backend | Integration: Integration of user interface with data base and other backend components
-
 ## External Libraries and Extensions
 Quill JS Rich Text Editor Version 2.0.0-rc.2 - https://quilljs.com/ .\
 IBM watsonx Assistant Lite
